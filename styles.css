@@ -1,1 +1,35 @@
+/* regular elements: selectors
+elements with class name: class selectors */
 
+/* Even when your div has no text, it's still treated as a box with content. */
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+    /* Adding padding all around has changed its dimensions to 502px x 602px.
+    Replace padding property with overflow set to hidden -
+    changing the canvas back to its original dimensions. */
+    /* padding: 1px; */
+    overflow: hidden;
+}
+
+.frame {
+    border: 50px solid black;
+    /* Precondition: Frame is too wide */
+    width: 500px;
+    /* To increase space between .frame and .canvas */
+    padding: 50px;
+    /* This will move the frame down 20px and horizontally centre it on page. */
+    margin: 20px auto;
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    margin: 20px auto;
+}
+
+.two {
+    width: 425px;
+}

@@ -1,1 +1,31 @@
 <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Rothko Painting</title>
+            <link href="styles.css" rel="stylesheet">
+        </head>
+        <body>
+            <!-- In the CSS box model, every HTML element is treated as a box with four areas.
+            Imagine you receive a box from your favourite online retailer --
+            the content is the item in the box, or in our case, a header, paragraph, or image element. -->
+            <!-- <img src="https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-1.png"> -->
+
+            <!-- The content is surrounded by a space called padding, similar to how
+            bubble wrap separates an item from the box around it.
+            Think of the border like the cardboard box your item was shipped in. -->
+            <!-- <img src="https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-2.png"> -->
+
+            <!-- Margin is the area outside of the box, and can be used to control the space between other boxed or elements.
+            Here the bottom element has a larger top margin, pushing it further down the page. -->
+            <!-- <img src="https://cdn.freecodecamp.org/curriculum/css-box-model/diagram-3.png"> -->
+            
+            <!-- Every painting needs a frame. -->
+            <div class="frame">
+                <div class="canvas">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                </div>
+            </div>
+        </body>
+    </html>
