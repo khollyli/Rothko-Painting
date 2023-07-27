@@ -11,6 +11,7 @@ elements with class name: class selectors */
     changing the canvas back to its original dimensions. */
     /* padding: 1px; */
     overflow: hidden;
+    filter: blur(2px);
 }
 
 .frame {
@@ -28,8 +29,37 @@ elements with class name: class selectors */
     height: 150px;
     background-color: #efb762;
     margin: 20px auto;
+    /* offset-x | offset-y | blur-radius | spread-radius | colour */
+    box-shadow: 0 0 3px 3px #efb762;
+    border-radius: 9px;
+    /* Rotate it counter clockwise by 0.6 degrees */
+    transform: rotate(-0.6deg);
 }
 
 .two {
-    width: 425px;
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401;
+    /* top | horizontal | bottom */
+    margin: 0 auto 20px;
+    box-shadow: 0 0 3px 3px #8f0401;
+    /* top-left and bottom-right radius | top-right and bottom-left radius */
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
+}
+
+.one, .two {
+    filter: blur(1px);
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    background: #b20403;
+    margin: auto;
+    filter: blur(2px);
+    box-shadow: 0 0 5px 5px #b20403;
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
 }
